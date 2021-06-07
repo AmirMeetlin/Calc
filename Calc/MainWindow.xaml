@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Calc"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="250" ResizeMode="NoResize">
-    
+   
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="125*"/>
@@ -34,22 +35,22 @@
                 <RowDefinition Height="1*"/>
 
             </Grid.RowDefinitions>
-            <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnClear" Margin="4" Content="C" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnClear_Click"></Button>
-            <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnDivide" Margin="4" Grid.Column="1" Content=":" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnDivide_Click"></Button>
-            <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnMultiply" Margin="4" Grid.Column="2" Content="X" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnMultiply_Click"></Button>
-            <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnDelete" Margin="4" Grid.Column="3" Content="DEL" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnDelete_Click"></Button>
+            <Button Style="{DynamicResource ButtonStyleSecondary}" x:Name="btnClear" Margin="4" Content="C" Background="#FF1674FC" BorderBrush="{x:Null}" Foreground="White" Click="btnClear_Click"></Button>
+            <Button Style="{DynamicResource ButtonStyleSecondary}" x:Name="btnDivide" Margin="4" Grid.Column="1" Content=":" Background="#FF1674FC" BorderBrush="{x:Null}" Foreground="White" Click="btnDivide_Click"></Button>
+            <Button Style="{DynamicResource ButtonStyleSecondary}" x:Name="btnMultiply" Margin="4" Grid.Column="2" Content="X" Background="#FF1674FC" BorderBrush="{x:Null}" Foreground="White" Click="btnMultiply_Click"></Button>
+            <Button Style="{DynamicResource ButtonStyleSecondary}" x:Name="btnDelete" Margin="4" Grid.Column="3" Content="DEL" Background="#FF1674FC" BorderBrush="{x:Null}" Foreground="White" Click="btnDelete_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnSeven" Margin="4" Grid.Row="1" Grid.Column="0" Content="7" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnSeven_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnEight" Margin="4" Grid.Row="1" Grid.Column="1" Content="8" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnEight_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnNine" Margin="4" Grid.Row="1" Grid.Column="2" Content="9" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnNine_Click"></Button>
-            <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnMinus" Margin="4" Grid.Row="1" Grid.Column="3" Content="-" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnMinus_Click"></Button>
+            <Button Style="{DynamicResource ButtonStyleSecondary}" x:Name="btnMinus" Margin="4" Grid.Row="1" Grid.Column="3" Content="-" Background="#FF1674FC" BorderBrush="{x:Null}" Foreground="White" Click="btnMinus_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnFour" Margin="4" Grid.Row="2" Grid.Column="0" Content="4" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnFour_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnFive" Margin="4" Grid.Row="2" Grid.Column="1" Content="5" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnFive_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnSix" Margin="4" Grid.Row="2" Grid.Column="2" Content="6" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnSix_Click"></Button>
-            <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnPlus" Margin="4" Grid.Row="2" Grid.Column="3" Content="+" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnPlus_Click"></Button>
+            <Button Style="{DynamicResource ButtonStyleSecondary}" x:Name="btnPlus" Margin="4" Grid.Row="2" Grid.Column="3" Content="+" Background="#FF1674FC" BorderBrush="{x:Null}" Foreground="White" Click="btnPlus_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnOne" Margin="4" Grid.Row="3" Grid.Column="0" Content="1" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnOne_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnTwo" Margin="4" Grid.Row="3" Grid.Column="1" Content="2" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnTwo_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnThree" Margin="4" Grid.Row="3" Grid.Column="2" Content="3" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnThree_Click"></Button>
-            <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnEquate" Margin="4" Grid.Row="3" Grid.Column="3" Grid.RowSpan="2" Content="=" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnEquate_Click"></Button>
+            <Button Style="{DynamicResource ButtonStyleSecondary}" x:Name="btnEquate" Margin="4" Grid.Row="3" Grid.Column="3" Grid.RowSpan="2" Content="=" Background="#FF1674FC" BorderBrush="{x:Null}" Foreground="White" Click="btnEquate_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnPow" Margin="4" Grid.Row="4" Grid.Column="0" Content="^" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnPow_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnZero" Margin="4" Grid.Row="4" Grid.Column="1" Content="0" Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnZero_Click"></Button>
             <Button Style="{DynamicResource ButtonStyleMain}" x:Name="btnComma" Margin="4" Grid.Row="4" Grid.Column="2" Content="," Background="#FF343434" BorderBrush="{x:Null}" Foreground="White" Click="btnComma_Click"></Button>

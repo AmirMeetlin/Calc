@@ -152,8 +152,12 @@ namespace Calc
 
         private void btnEquate_Click(object sender, RoutedEventArgs e)
         {
-            tbActions.Text = tbCalculations.Text;
-            tbCalculations.Text = Calculations.Calculator(tbCalculations.Text).ToString();
+            if (tbCalculations.Text !="" &&  tbCalculations.Text[tbCalculations.Text.Length - 1] != ':' && tbCalculations.Text[tbCalculations.Text.Length - 1] != '+' && tbCalculations.Text[tbCalculations.Text.Length - 1] != '-' && tbCalculations.Text[tbCalculations.Text.Length - 1] != 'x' && tbCalculations.Text[tbCalculations.Text.Length - 1] != '^' && tbCalculations.Text[tbCalculations.Text.Length - 1] != ',')
+            {
+                tbActions.Text = tbCalculations.Text;
+                tbCalculations.Text = Calculations.Calculator(tbCalculations.Text).ToString();
+            }
+            
             
         }
 
