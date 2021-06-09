@@ -137,8 +137,12 @@ namespace Calc
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            tbActions.Text = "";
-            tbCalculations.Text = tbCalculations.Text.Remove(tbCalculations.Text.Length - 1);
+            if(tbCalculations.Text!="")
+            {
+                tbActions.Text = "";
+                tbCalculations.Text = tbCalculations.Text.Remove(tbCalculations.Text.Length - 1);
+            }
+            
         }
 
         private void btnPow_Click(object sender, RoutedEventArgs e)
@@ -217,6 +221,7 @@ namespace Calc
                 {
                     btnDivide.IsEnabled = false;
                     btnComma.IsEnabled = false;
+
                     btnPow.IsEnabled = false;
                     btnMinus.IsEnabled = false;
                     btnMultiply.IsEnabled = false;
